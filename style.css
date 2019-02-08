@@ -1,23 +1,48 @@
-.coolTitle {
+h1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 0 auto;
+  padding-top: 5%;
   text-align: center;
-  font-family: 'Oswald', Helvetica, sans-serif;
-  font-size: 40px;
-  transform: skewY(-10deg);
-  letter-spacing: 4px;
-  word-spacing: -8px;
-  color: tomato;
-  text-shadow: 
-    -1px -1px 0 firebrick,
-    -2px -2px 0 firebrick,
-    -3px -3px 0 firebrick,
-    -4px -4px 0 firebrick,
-    -5px -5px 0 firebrick,
-    -6px -6px 0 firebrick,
-    -7px -7px 0 firebrick,
-    -8px -8px 0 firebrick,
-    -30px 20px 40px dimgrey;
+  font-size: 60px;
+  font-family: 'Arizonia', cursive;
+}
+.itemInput{
+  display: grid;
+  padding: 100px 100px 50px;
+  margin: 0 auto;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); 
+  grid-template-rows: 1fr;
+}
+
+.listContainer {
+  display: grid;
+  padding: 0 60px 0;
+  margin: 0 auto;
+  grid-gap: 20px;
+  grid-template-columns: 1fr; 
+  grid-template-rows: 1fr;
 }
 
 .done {
   text-decoration: line-through;
+}
+
+#listItem {
+  list-style: none;
+  line-height: 2;
+}
+
+#listItem:hover{
+  cursor: pointer;
+}
+
+#enter {
+  color: blue;
+  border-radius: 16px;
+}
+
+button {
+  color: red;
 }
